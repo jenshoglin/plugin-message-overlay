@@ -1,0 +1,32 @@
+{
+    "name": "@pexip/poll-plugin",
+    "version": "0.1.0",
+    "private": true,
+    "description": "Message overlay plugin",
+    "license": "UNLICENSED",
+    "homepage": "https://gitlab.com/pexip/zoo",
+    "bugs": "https://gitlab.com/pexip/zoo/issues",
+    "repository": {
+        "type": "git",
+        "url": "https://gitlab.com/pexip/zoo.git",
+        "directory": ""
+    },
+    "packageManager": "yarn@1.22.21",
+    "scripts": {
+        "build": "vite build",
+        "clean": "rm -rf dist",
+        "start": "vite",
+        "check-format": "prettier --ignore-path=../../.prettierignore --check .",
+        "format": "prettier --ignore-path=../../.prettierignore --write .",
+        "lint": "yarn run -T eslint --ext .js,.ts,.tsx --report-unused-disable-directives .",
+        "typecheck": "yarn tsc --noEmit -p ."
+    },
+    "devDependencies": {
+        "prettier": "^2.7.1",
+        "typescript": "~4.9.0",
+        "vite": "^3.0.4"
+    },
+    "dependencies": {
+        "@pexip/plugin-api": "^19.1.0"
+    }
+}
